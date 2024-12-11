@@ -66,11 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterProducts() {
         const activeFilters = {
             category: [],
-
-
             taste: [],
             milk: [],
-            type: []
+            type: [],
+            special: []
         };
 
         // Collect active filters
