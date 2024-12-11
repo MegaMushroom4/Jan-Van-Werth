@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sortiment - Jan Van Werth</title>
+            <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <link rel="stylesheet" href="style.css">
+        </head>
+    
+        <body>
+            <header class="header">
+                <nav class="navbar">
+                    <a href="index.html" class="home-link">
+                        <img src="graphics/Jan Van Werth Logo.png" class="logo" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <a href="about.html">Über uns ▼</a>
+                            <ul class="dropdown-content">
+                                <li><a href="Sortiment.html">Sortiment</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakt ▼</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <div class="email-options">
+                                        <a href="mailto: janvanwerth@icloud.com"><img src="graphics/Gmail Logo.png" alt="Gmail">per Gmail</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="email-options">
+                                        <a href="https://outlook.office.com/mail/deeplink/compose?to= janvanwerth@icloud.com"><img src="graphics/Microsoft_Office_Outlook_(2018–present).svg.png" alt="Outlook">per Outlook</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="login.html"><i class="fa-regular fa-user"></i> Login ▼</a>
+                            <ul class="dropdown-content">
+                                <li><a href="Login/login.html">Login</a></li>
+                                <li><a href="Login/register.html">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="Seiteninhalt">
+                <div class="Seiteninhalt">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Suchen...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <h3>Kategorien</h3>
+                        <label><input type="checkbox" data-filter="category" value="Hartkäse"> Hartkäse</label>
+                        <label><input type="checkbox" data-filter="category" value="Weichkäse"> Weichkäse</label>
+                        <label><input type="checkbox" data-filter="category" value="Halbfest"> Halbfest</label>
+                        <label><input type="checkbox" data-filter="category" value="Frischkäse"> Frischkäset</label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Geschmacksprofil</h3>
+                        <label><input type="checkbox" data-filter="taste" value="mild"> Mild</label>
+                        <label><input type="checkbox" data-filter="taste" value="würzig"> Würzig</label>
+                        <label><input type="checkbox" data-filter="taste" value="süßlich"> Süßlich</label>
+                        <label><input type="checkbox" data-filter="taste" value="sauer"> Sauer</label>
+                        <label><input type="checkbox" data-filter="taste" value="salzig"> Salzig</label>
+                    </div>
+                
+                    <div class="filter-group">
+                        <h3>Reifung</h3>
+                        <label><input type="checkbox" data-filter="ripeness" value="Frischkäse"> Frischkäse</label>
+                        <label><input type="checkbox" data-filter="ripeness" value="Jungkäse"> Jungkäse</label>
+                        <label><input type="checkbox" data-filter="ripeness" value="Mittelreifer"> Mittelreifer</label>
+                        <label><input type="checkbox" data-filter="ripeness" value="Altkäse"> Altkäse</label>
+                    </div>
+                
+                    <div class="filter-group">
+                        <h3>Milchsorten</h3>
+                        <label><input type="checkbox" data-filter="milchsorte" value="Kuhmilch"> Kuhmilch</label>
+                        <label><input type="checkbox" data-filter="milchsorte" value="Schafsmilch"> Schafsmilch</label>
+                        <label><input type="checkbox" data-filter="milchsorte" value="Ziegenmilch"> Ziegenmilch</label>
+                    </div>
+                
+                    <div class="filter-group">
+                        <h3>Herstellungsart</h3>
+                        <label><input type="checkbox" data-filter="herstellung" value="Presskäse"> Presskäse</label>
+                        <label><input type="checkbox" data-filter="herstellung" value="Schnittkäse"> Schnittkäse</label>
+                        <label><input type="checkbox" data-filter="herstellung" value="Blauschimmelkäse"> Blauschimmelkäse</label>
+                        <label><input type="checkbox" data-filter="herstellung" value="Waschkäse"> Waschkäse</label>
+                    </div>
+                
+                    <div class="filter-group">
+                        <h3>Besonderheiten</h3>
+                        <label><input type="checkbox" data-filter="ripeness" value="Bio"> Bio</label>
+                        <label><input type="checkbox" data-filter="ripeness" value="Rohmilch"> Rohmilch</label>
+                    </div>
+                </div>
+                
+                <div class="products-container">
+                    <div class="product-item" 
+                    data-category="Weichkäse" 
+                    data-taste="mild,süßlich,pilzig"
+                    data-milk="Kuhmilch"
+                    data-type="Weißschimmelkäse">
+                    <h4>Camembert</h4>
+                </div>
+
+                <div class="product-item" 
+                     data-category="Weichkäse"
+                     data-taste="mild,süßlich,pilzig"
+                     data-milk="Kuhmilch"
+                     data-type="Weißschimmelkäse">
+                    <h4>Brie</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Weichkäse"
+                     data-taste="salzig,säuerlich"
+                     data-milk="Schafsmilch,Ziegenmilch">
+                    <h4>Feta</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Halbfest"
+                     data-taste="mild,würzig"
+                     data-milk="Kuhmilch">
+                    <h4>Gouda</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Hartkäse"
+                     data-taste="kräftig,salzig,nussig"
+                     data-milk="Kuhmilch"
+                     data-ripeness="altkäse">
+                    <h4>Parmesan</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Hartkäse"
+                     data-taste="würzig,scharf"
+                     data-milk="Kuhmilch">
+                    <h4>Cheddar</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Frischkäse"
+                     data-taste="mild,süßlich"
+                     data-milk="Kuhmilch,Büffelmilch">
+                    <h4>Mozzarella</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Frischkäse"
+                     data-taste="mild,säuerlich"
+                     data-milk="Kuhmilch">
+                    <h4>Quark</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Weichkäse"
+                     data-taste="intensiv,würzig,salzig"
+                     data-milk="Schafsmilch"
+                     data-type="Blauschimmelkäse"
+                     data-ripeness="mittelreifer">
+                    <h4>Roquefort</h4>
+                </div>
+            
+                <div class="product-item" 
+                     data-category="Weichkäse"
+                     data-taste="intensiv,würzig,salzig"
+                     data-milk="Kuhmilch"
+                     data-type="Blauschimmelkäse"
+                     data-ripeness="mittelreifer">
+                    <h4>Gorgonzola</h4>
+                </div>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
